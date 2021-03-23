@@ -2,7 +2,6 @@ import streamlit as st
 from nltk.tokenize import word_tokenize
 from preprocessing import remove_noise
 import pickle
-import nltk
 
 #----------- A simple function to get user input
 def get_text():
@@ -12,10 +11,7 @@ def get_text():
 
 #----------------------- Initialization function
 @st.cache(show_spinner=False)
-def initialize_():
-    nltk.download('wordnet')
-    nltk.download('averaged_perceptron_tagger')
-    
+def initialize_():  
     # Load model file
     with open('models/naive_bayes.mdl', 'rb') as file:
         classifier = pickle.load(file)

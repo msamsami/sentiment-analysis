@@ -12,6 +12,8 @@ def get_text():
 #----------------------- Initialization function
 @st.cache(show_spinner=False)
 def initialize_():  
+    nltk.download('punkt')
+    
     # Load model file
     with open('models/naive_bayes.mdl', 'rb') as file:
         classifier = pickle.load(file)

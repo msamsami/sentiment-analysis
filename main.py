@@ -2,6 +2,7 @@ import streamlit as st
 from nltk.tokenize import word_tokenize
 from preprocessing import remove_noise
 import pickle
+import nltk
 
 #----------- A simple function to get user input
 def get_text():

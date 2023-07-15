@@ -67,7 +67,7 @@ def main():
     st.sidebar.text("Model: ")
     st.sidebar.text("Naive Bayes Classifier")
 
-    input_comment = get_text()  # Get user input
+    input_comment = get_text()
 
     classifier = _initialize_model()
 
@@ -78,12 +78,13 @@ def main():
         dist = classifier.prob_classify(dict([token, True] for token in input_tokens))
         prob = [dist.prob(label) for label in dist.samples()]
 
-        confidence = max(prob)
         if prob[0] > prob[1]:
             st.image("images/positive.png", width=200)
         else:
             st.image("images/negative.png", width=200)
-        st.write("Confidence score = ", float(str(confidence)[:6]))
+        
+        confidence = max(prob)
+        st.write(f"Confidence score = {confidence:.4f}")
 
 
 if __name__ == "__main__":

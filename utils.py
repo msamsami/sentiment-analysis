@@ -1,17 +1,15 @@
+import re
+import string
+
+import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.tag import pos_tag
-import re, string
-import nltk
-import streamlit as st
 
-st.cache(show_spinner=False)
-def initialize_():
-    nltk.download('wordnet')
-    nltk.download('averaged_perceptron_tagger')
 
-# This function removes useless information from the input tokens
-def remove_noise(tweet_tokens, stop_words = ()):    
-    initialize_()
+def remove_noise(tweet_tokens, stop_words = ()):
+    """
+    Removes useless information from the input tokens.
+    """
     cleaned_tokens = []
 
     for token, tag in pos_tag(tweet_tokens):

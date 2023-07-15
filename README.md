@@ -21,7 +21,6 @@ The *main.py* file is a **Streamlit** app and is deployed to [Streamlit Share](h
 
 #### [Comment Sentiment Analysis](https://share.streamlit.io/msamsami/sentiment-analysis/main/main.py) ####
 
-Here is an screenshot of the app:
 
 <p align="center">
   <img src="./images/app-main.png" width="620" title="hover text">

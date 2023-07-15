@@ -5,7 +5,7 @@ import nltk
 from nltk.corpus import twitter_samples
 from nltk import FreqDist, classify, NaiveBayesClassifier
 
-from preprocessing import remove_noise
+from utils import remove_noise
 
 
 # Download necessary modules

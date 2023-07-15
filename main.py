@@ -1,6 +1,6 @@
 import streamlit as st
 from nltk.tokenize import word_tokenize
-from preprocessing import remove_noise
+from utils import remove_noise
 import pickle
 import nltk
 

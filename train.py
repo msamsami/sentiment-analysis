@@ -23,6 +23,8 @@ def get_tweets_for_model(list_tokens):
 def train(save_to: str, test_size: float = 0.3):
     # Download necessary modules
     nltk.download("twitter_samples")
+    nltk.download('wordnet')
+    nltk.download('averaged_perceptron_tagger')
     nltk.download("stopwords")
     nltk.download("punkt")
 

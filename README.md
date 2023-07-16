@@ -1,8 +1,8 @@
 # Sentiment Analysis using Naive Bayes
 
-| ![header](./images/header.png) | 
-|:--:|
-| *Source: www.expressanalytics.com* |
+![header](./images/header.png)
+
+<sub><sup>Image source: www.expressanalytics.com</sup></sub>
 
 
 ## Introduction

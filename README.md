@@ -1,5 +1,12 @@
 # Sentiment Analysis using Naive Bayes
 
+<figure>
+  <p align="center">
+    <img src="./images/header.png" title="header">
+    <figcaption>Source: www.expressanalytics.com/sentiment-analysis</figcaption>
+  </p>
+</figure>
+
 ## Introduction
 A dataset of sample tweets is taken from the NLTK library and used to create a sentiment analysis model. The model is built using a **Naive Bayes Classifier** trained on a dataset of positive and negative tweets after preprocessing. The model takes a list of text tokens (that make up a comment) as input and predicts whether the corresponding comment is positive or negative.
 
@@ -23,5 +30,5 @@ The *main.py* file is a **Streamlit** app and is deployed to [Streamlit Share](h
 
 
 <p align="center">
-  <img src="./images/app-main.png" width="620" title="hover text">
+  <img src="./images/app-main.png" width="620" title="app screenshot">
 </p>
